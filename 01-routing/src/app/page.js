@@ -1,9 +1,25 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "./page.module.css";
+import Link from "next/link";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  return <main className={styles.main}>test</main>;
+  return <main >
+    <Link href="/hakkimizda">Hakkimizda</Link>
+    <br/>
+    <Link href="/docs/post-1">Post-1</Link>
+    <br/>
+
+    <Link href="/docs/post-3/post-5">Post-5</Link>
+    <br/>
+
+    <Link 
+    target="_blank"
+    className="test"
+    href={{
+      pathname:"/hakkimizda",
+      query:{
+        name:"Next.js",
+        surname:"framework"
+      }
+    }}>Hakkimizda Obje ile</Link>
+  </main>;
 }
