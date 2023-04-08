@@ -26,7 +26,7 @@ async function HomePage() {
   //   data2,
   //   data3,
   // ]);
-  console.log(dataResult);
+  // console.log(dataResult);
   return (
     <div>
       Home Page : <br />
